@@ -1,6 +1,8 @@
 ---
 - name: Pull Docker image of Calculator
   hosts: all
+    - name: install python
+      shell: sudo apt install python3
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
